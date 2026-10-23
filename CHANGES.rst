@@ -1,6 +1,12 @@
 Changes
 =======
 
+Unreleased
+----------
+
+* Added support for typographic apostrophes (``’`` U+2019 and ``ʼ`` U+02BC) as
+  thousands separators, e.g. ``CHF 1’234.50``.
+
 0.5.1 (2026-03-19)
 ------------------
 
