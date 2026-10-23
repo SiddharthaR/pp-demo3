@@ -110,6 +110,12 @@ PRICE_PARSING_EXAMPLES_NEW = [
     Example(None, "CHF 1‘234.50", "CHF", "1234.50", 1234.50),
     Example(None, "CHF 1ʼ234.50", "CHF", "1234.50", 1234.50),
     Example(None, "CHF 1′234.50", "CHF", "1234.50", 1234.50),
+    Example(None, "1'235€99", "€", "1235€99", 1235.99),
+    Example(None, "1’235€99", "€", "1235€99", 1235.99),
+    Example(None, "1‘235€99", "€", "1235€99", 1235.99),
+    Example(None, "1ʼ235€99", "€", "1235€99", 1235.99),
+    Example(None, "1′235€99", "€", "1235€99", 1235.99),
+    Example(None, "CHF 1’235€99", "CHF", "1235€99", 1235.99),
     Example(None, "644.00 جنيه", "جنيه", "644.00", 644.0),  # Egyptian pound (EGP)
     Example(None, "3,439.00 درهم", "درهم", "3,439.00", 3439.0),  # UAE dirham (AED)
     Example(None, "106.61 ريال", "ريال", "106.61", 106.61),  # Saudi riyal (SAR)
